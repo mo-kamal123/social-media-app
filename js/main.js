@@ -13,7 +13,7 @@ axios.get(`${base}/posts`)
         // console.log(post);
         let author = post.author
         let content = `
-        <div class="card  pad mb-5  rounded">
+        <div class="card  pad mb-5 ">
                 <div class="card">
                     <div class="card-header">
                         <img src="${author.profile_image}" alt="" class="rounded-circle border border-2 p-1">
@@ -156,12 +156,12 @@ function regbtn(){
     })
 
 }
-function setUserName (Response) {
-    // let imgdiv = document.getElementById("img")
-    let userdiv = document.getElementById("username")
-    userdiv.innerHTML = `${Response.data.user.username}`
-    // imgdiv.innerHTML = `${Response.data.user.profile_image}`
-}
+// function setUserName (Response) {
+//     // let imgdiv = document.getElementById("img")
+//     let userdiv = document.getElementById("username")
+//     userdiv.innerHTML = `${Response.data.user.username}`
+//     // imgdiv.innerHTML = `${Response.data.user.profile_image}`
+// }
 function logoutbtn( ) {
     localStorage.removeItem("token")
     localStorage.removeItem("user")
@@ -181,7 +181,7 @@ function setupui() {
     } else {
         loginbtn.style.setProperty("display", "none", "important") 
         logoutbtn.style.setProperty("display", "flex", "important") 
-        addbtn.style.setProperty("display", "block", "important") 
+        addbtn.style.setProperty("display", "flex", "important") 
     }
 }
 
