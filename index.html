@@ -29,11 +29,11 @@
               <form>
                 <div class="mb-3">
                   <label for="recipient-name" class="col-form-label" >Username:</label>
-                  <input type="email" class="form-control" id="user-input" value="yarob99">
+                  <input type="email" class="form-control" id="user-input" value="">
                 </div>
                 <div class="mb-3">
                   <label for="message-text" class="col-form-label" >Password:</label>
-                  <input type="password" class="form-control" id="pass-input" value="123456">
+                  <input type="password" class="form-control" id="pass-input" value="">
                 </div>
               </form>
             </div>
@@ -57,15 +57,15 @@
               <form>
                 <div class="mb-3">
                   <label for="recipient-name" class="col-form-label" >Name:</label>
-                  <input type="email" class="form-control" id="regname-input" value="yarob99">
+                  <input type="email" class="form-control" id="regname-input" value="">
                 </div>
                 <div class="mb-3">
                   <label for="recipient-name" class="col-form-label" >Username:</label>
-                  <input type="email" class="form-control" id="reguser-input" value="yarob99">
+                  <input type="email" class="form-control" id="reguser-input" value="">
                 </div>
                 <div class="mb-3">
                   <label for="message-text" class="col-form-label" >Password:</label>
-                  <input type="password" class="form-control" id="regpass-input" value="123456">
+                  <input type="password" class="form-control" id="regpass-input" value="">
                 </div>
               </form>
             </div>
@@ -120,18 +120,21 @@
     <nav class="navbar navbar-expand-lg bg-dark shadow p-3 mb-5 position-fixed top-0 start-0 z-3 w-100 ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Tarmeez</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          </button> -->
+          <div class="collapse navbar-collapse align" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Profile</a>
-              </li>
+              </li> -->
                 </ul>
+                <form class="d-flex" role="search" id="out">
+                  <button onclick="logoutbtn()" id="logout" class="btn btn-outline-danger" type="button">Log out</button>
+              </form>
                 <!-- non logged in -->
                 <form class="d-flex" role="search" id="in">
                     <button id="log" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-outline-success mx-3" type="button">Login</button>
@@ -141,9 +144,9 @@
                 <div id="img"><img src="" alt=""></div>
                 <div id="username"></div>
                 <!-- logged in  -->
-                <form class="d-flex" role="search" id="out">
+                <!-- <form class="d-flex" role="search" id="out">
                     <button onclick="logoutbtn()" id="logout" class="btn btn-outline-danger" type="button">Log out</button>
-                </form>
+                </form> -->
                 <!-- logged in  -->
           </div>
         </div>
@@ -154,7 +157,7 @@
       </div>  
     </div>
     <!-- main content -->
-    <div class="container w-lg-50" style="height: 1000px ; max-width: 70%; ">
+    <div class="container-float" style="height: 1000px ; max-width: 70% ; margin: auto; ">
         <!-- posts -->
         <div id="posts" style="margin-top:130px; ">
             <div class="card shadow pad p-3 mb-5 bg-body-tertiary rounded">
